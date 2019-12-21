@@ -1,26 +1,28 @@
+import JSONFormatter from 'json-formatter-js'
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let [ response, setResponse ] = React.useState([]);
+    React.useEffect(() => {
+        fetch('https://seanhaneberg.com/blog/wp-json')
+            .then(res => res.json())
+            .then((data) => {
+                setResponse(data);
+            });
+    });
+
+    let formatter = new JSONFormatter(response);
+    let renderedResult = {__html: formatter.render().innerHTML };
+
+    return (
+        <div className="App">
+            <header className="App-header"/>
+            <div dangerouslySetInnerHTML={renderedResult}>
+            </div>
+        </div>
+        );
 }
 
 export default App;
