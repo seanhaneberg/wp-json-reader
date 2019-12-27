@@ -1,4 +1,4 @@
-import JSONFormatter from 'json-formatter-js'
+import ReactJson from 'react-json-view';
 import React from 'react';
 
 import './App.css';
@@ -13,14 +13,10 @@ function App() {
             });
     });
 
-    let formatter = new JSONFormatter(response);
-    let renderedResult = {__html: formatter.render().innerHTML };
-
     return (
         <div className="App">
             <header className="App-header"/>
-            <div dangerouslySetInnerHTML={renderedResult}>
-            </div>
+            <ReactJson src={response} enableClipboard={false} collapsed={3}/>
         </div>
         );
 }
