@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4bd3344062cf8f89a71d319c0b6986e1",
+    "revision": "f34d6cf2174388755da3b4019ea822a5",
     "url": "/wp-json-reader/index.html"
   },
   {
-    "revision": "5fd24b88b5fb1c4f7b52",
+    "revision": "5802bcdad4888e633f87",
     "url": "/wp-json-reader/static/css/main.bac31a15.chunk.css"
   },
   {
-    "revision": "ae905b1559a1e6d3ae1f",
-    "url": "/wp-json-reader/static/js/2.90cd0889.chunk.js"
+    "revision": "9838c2f1686a3c32e684",
+    "url": "/wp-json-reader/static/js/2.8510a4bf.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/wp-json-reader/static/js/2.90cd0889.chunk.js.LICENSE"
+    "url": "/wp-json-reader/static/js/2.8510a4bf.chunk.js.LICENSE"
   },
   {
-    "revision": "5fd24b88b5fb1c4f7b52",
-    "url": "/wp-json-reader/static/js/main.a4c2de1f.chunk.js"
+    "revision": "5802bcdad4888e633f87",
+    "url": "/wp-json-reader/static/js/main.fd3812ed.chunk.js"
   },
   {
     "revision": "b344f411da4367efc1dd",
